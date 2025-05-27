@@ -1,0 +1,18 @@
+{
+  "rules": [
+    {
+      "rule": "AvoidComplexMethods",
+      "enabled": true,
+      "parameters": {
+        "maxCyclomaticComplexity": 10
+      }
+    },
+    {
+      "rule": "AvoidLongMethods",
+      "enabled": true,
+      "parameters": {
+        "maxLinesOfCode": 20
+      }
+    }
+  ]
+}

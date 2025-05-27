@@ -1,0 +1,20 @@
+﻿@model List<WebApplication1.Data.ClientFeatures>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <h1>Client Features</h1>
+
+    <button onclick="location.href='@Url.Action("ToggleIndex", "Home")'">Toggle Index</button>
+
+    <ul>
+        @foreach (var feature in Model)
+        {
+            <li>@feature.Name - @feature.Abbreviation</li>
+        }
+    </ul>
+</body>
+</html>
