@@ -80,7 +80,7 @@ namespace WebApplication1.Controllers
         public IActionResult Logout()
         {
             HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Index");
+            return RedirectToAction("Login");
         }
     }
 }
